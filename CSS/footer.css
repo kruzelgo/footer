@@ -53,6 +53,11 @@ ul {
   letter-spacing: -0.02em;
   line-height: 1.12;
 }
+.footer-link-contacts:hover,
+.footer-link-contacts:focus {
+  cursor: pointer;
+  color: #fd9222;
+}
 .footer-sm-icons {
   display: flex;
   gap: 14px;
