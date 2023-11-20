@@ -16,7 +16,7 @@ ul {
   line-height: 1.16;
   letter-spacing: -0.02em;
   width: 300px;
-  padding-bottom: 32px;
+  padding: 32px 0 32px 0;
 }
 .footer-heading-span {
   color: #fff;
@@ -29,27 +29,49 @@ ul {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: -0.02em;
+  margin: 0;
 }
 .footer-address {
-  text-decoration: none;
 }
 .footer-list-address {
+  padding: 0;
+}
+.footer-contact {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 14px;
+
+  width: 164px;
+}
+.footer-link-contacts {
+  text-decoration: none;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: -0.02em;
+  line-height: 1.12;
 }
 .footer-sm-icons {
   display: flex;
   gap: 14px;
-  margin-left: 137px;
+  margin: 0;
   padding: 0;
   align-items: center;
   justify-content: flex-end;
+  align-items: flex-start;
 }
 .footer-line {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .footer-sm-icon {
   background-color: #fff;
+  margin: 0;
 }
-
+.footer-address-style {
+  list-style: none;
+}
 .footer-sm-list {
   list-style: none;
 }
@@ -76,7 +98,7 @@ hr {
   padding: 0 0 32px 0;
   display: flex;
   flex-direction: column;
-  column-gap: 18px;
+  gap: 18px;
   justify-content: flex-start;
 }
 .footer-list-calc {
@@ -97,4 +119,38 @@ hr {
 .footer-menu-link:focus {
   cursor: pointer;
   color: #fd9222;
+}
+.footer-address-sm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* ================================================= TABLET 👇 ========================================= */
+@media screen and (min-width: 768px) {
+  .footer-container {
+    width: 768px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 32px;
+  }
+  .footer-contacts {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer-contact {
+  }
+  .footer-heading {
+    padding: 50px 0 54px 0;
+  }
+  hr {
+    margin: 0 0 24px 0;
+  }
+  .footer-address-sm {
+    margin-left: 124px;
+    padding: 50px 0 54px 0;
+    gap: 50px;
+  }
+  .footer-sm-icons {
+    padding: ;
+  }
 }
