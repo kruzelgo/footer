@@ -153,4 +153,12 @@ hr {
   .footer-sm-icons {
     padding: ;
   }
+  .footer-menu-list {
+    flex-direction: row;
+    gap: 24px;
+  }
+  .footer-heading {
+    font-size: 28px;
+    line-height: 1.21;
+  }
 }
